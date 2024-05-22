@@ -1,0 +1,6 @@
+definitions:
+  readonly:
+    type: object
+    properties:
+      name:
+        type: string

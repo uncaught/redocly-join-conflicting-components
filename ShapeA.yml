@@ -1,0 +1,7 @@
+definitions:
+  readonly:
+    - $ref: './BaseShape.yml#/definitions/readonly'
+    - type: object
+      properties:
+        propA:
+          type: string

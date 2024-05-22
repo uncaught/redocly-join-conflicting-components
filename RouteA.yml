@@ -1,0 +1,23 @@
+openapi: 3.0.0
+info:
+  title: 'A'
+  description: ''
+  version: 'v1'
+
+paths:
+  /getA:
+    get:
+      summary: 'A'
+      description: ''
+      responses:
+        200:
+          description: 'Ok'
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: './ShapeA.yml#/definitions/readonly'
+                  - type: object
+                    properties:
+                      propA:
+                        type: string
