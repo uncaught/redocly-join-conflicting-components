@@ -1,7 +1,8 @@
 definitions:
   readonly:
-    - $ref: './BaseShape.yml#/definitions/readonly'
-    - type: object
-      properties:
-        propB:
-          type: string
+    allOf:
+      - $ref: './BaseShape.yml#/definitions/readonly'
+      - type: object
+        properties:
+          propB:
+            type: string
